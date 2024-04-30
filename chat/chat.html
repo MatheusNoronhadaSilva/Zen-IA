@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="chat.css">
     <script src="chat.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
@@ -36,6 +37,12 @@
             <ul>
                 <li>Como fazer um bolo de cenoura?</li>
             </ul>
+        </div>
+        <div class="usuario">
+            <div class="info">
+                <img src="../img/image-removebg-preview.png" alt="">
+                <h4 id="nomeUsuario"></h4>
+            </div>
         </div>
     </nav>
     <div class="chat">
@@ -77,7 +84,7 @@
                 </div>
             </div> -->
         </div>
-        <textarea name="" id="requisicao"></textarea>
+        <textarea name="" placeholder="digite aqui" oninput="ajustarTamanho()" id="requisicao"></textarea>
     </div>
 </body>
 </html>

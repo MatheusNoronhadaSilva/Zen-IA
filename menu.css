@@ -72,6 +72,7 @@ h2{
 }
 
 input{
+    padding: 1vh 1vw;
     height: 6vh;
     width: 100%;
     border-radius: 12px;
@@ -132,3 +133,4 @@ p{
 a{
     text-decoration: none;
 }
+

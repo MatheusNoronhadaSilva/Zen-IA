@@ -26,7 +26,7 @@ async function validarUsuario () {
         
             if(email == usuario.email && senha == usuario.senha){
                 console.log('foi');
-                window.location.href = './chat/chat.html'
+                window.location.href = `./chat/chat.html?idUsuario=${usuario.id}`
                 mensagemError.classList.remove('aparecer')
                 mensagemError.classList.add('sumir')
             } else {
@@ -38,3 +38,4 @@ async function validarUsuario () {
         alert('A aplicação esta com um erro - Contate o ADMIN')
     }
 }
+  

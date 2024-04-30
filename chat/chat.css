@@ -8,6 +8,7 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 nav{
@@ -74,7 +75,8 @@ ul{
     flex-direction: column;
     gap: 7vh;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
+    padding-bottom: 5vh;
 }
 
 .mensagem{
@@ -123,10 +125,42 @@ p{
 }
 
 textarea{
+    overflow-y: auto;
     resize: none;
     border: solid #D17A49 8px;
     border-radius: 12px;
-    height: 9vh;
+    min-height: 9vh;
+    max-height: 14vh;
     font-size: 1.5vw;
     width: 100%;
+}
+
+
+.usuario{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    margin-top: auto;
+    justify-content: center;
+    padding-right: 4vw;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h4{
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.info img{
+    height: 5vh;
+    width: 3vw;
+
 }
