@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="menu.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="apresentacao">
@@ -19,17 +20,18 @@
             <img src="./img/Love_Death___Robots-removebg-preview 1.png" alt="">
             <div class="logar">
                 <div class="user">
-                    <h2>USER</h2>
-                    <input type="text">
+                    <h2>USER EMAIL</h2>
+                    <input id="email" type="text">
                 </div>
                 <div class="password">
                     <h2>PASSWORD</h2>
-                    <input type="text">
+                    <input id="senha" type="text">
                 </div>
             </div>
-            <a href="./chat/chat.html">
-                <div class="entrar">ENTRAR</div>
-            </a>
+            <div class="validacao">
+                <button onclick="validarUsuario()">ENTRAR</button>
+                <p id="mensagemError" class="mensagemError">O email ou senha são inválidos</p>
+            </div>
         </div>
         <img class="triangulos" src="./img/Group 1.png" alt="">
     </div>
