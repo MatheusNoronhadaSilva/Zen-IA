@@ -147,6 +147,7 @@ const consultaGemini = (question) => {
     fetch(url, requestOptions)
     .then(response => response.json())
     .then(data => {
+        console.log(data);
         const responseTextIa = data.candidates[0].content.parts[0].text;
         respostaIa(responseTextIa);
     })
